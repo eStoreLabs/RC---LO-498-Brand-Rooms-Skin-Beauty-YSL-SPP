@@ -93,6 +93,10 @@ body {
     &__image {
       @include img;
       width: 95%;
+
+      &--desktop {
+        display: none;
+      }
     }
   }
 
@@ -462,7 +466,7 @@ body {
     padding: 0;
     margin: 0;
     bottom: 3%;
-    left: 50%;
+    left: 45%;
   }
 
   .slick-dots li {
@@ -586,6 +590,18 @@ body {
       &__name {
         margin-bottom: 20px;
         font-size: 21px;
+      }
+    }
+
+    .es-slider {
+      &__image {
+        &--desktop {
+          display: block;
+        }
+
+        &--mobile {
+          display: none;
+        }
       }
     }
   }

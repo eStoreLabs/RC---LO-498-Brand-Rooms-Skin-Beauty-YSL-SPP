@@ -74,6 +74,9 @@ body {
   margin: 0 auto;
   width: 95%;
 }
+#es-prada.es-prada .es-slider__image--desktop {
+  display: none;
+}
 #es-prada.es-prada .es-category {
   padding-left: 15px;
   padding-right: 15px;
@@ -451,7 +454,7 @@ body {
   padding: 0;
   margin: 0;
   bottom: 3%;
-  left: 50%;
+  left: 45%;
 }
 #es-prada.es-prada .slick-dots li {
   width: 12px;
@@ -554,6 +557,12 @@ body {
   #es-prada.es-prada .es-info__name {
     margin-bottom: 20px;
     font-size: 21px;
+  }
+  #es-prada.es-prada .es-slider__image--desktop {
+    display: block;
+  }
+  #es-prada.es-prada .es-slider__image--mobile {
+    display: none;
   }
 }
 @media screen and (min-width: 860px) {
