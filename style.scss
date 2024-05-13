@@ -545,6 +545,10 @@ body {
   }
 
   @media screen and (min-width: 768px) {
+    .slick-dots {
+      left: 47%;
+    }
+
     .es-title {
       margin-bottom: 50px;
       font-size: 30px;

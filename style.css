@@ -512,6 +512,9 @@ body {
   }
 }
 @media screen and (min-width: 768px) {
+  #es-prada.es-prada .slick-dots {
+    left: 47%;
+  }
   #es-prada.es-prada .es-title {
     margin-bottom: 50px;
     font-size: 30px;
