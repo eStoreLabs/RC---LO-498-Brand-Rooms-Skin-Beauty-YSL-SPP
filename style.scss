@@ -148,15 +148,14 @@ body {
     &__container {
       display: flex;
       flex-wrap: wrap;
-      flex-flow: column;
-      justify-content: center;
+      justify-content: space-around;
       align-items: center;
       padding: 0 8px;
       margin: 0 -16px;
     }
     &__img {
       @include img;
-      max-width: 280px;
+      max-width: 140px;
       max-height: 290px;
       margin-bottom: 27px;
 
@@ -165,7 +164,7 @@ body {
       }
     }
     &__single {
-      max-width: 275px;
+      max-width: 140px;
       margin-bottom: 25px;
       padding: 0 8px;
       display: flex;
@@ -208,7 +207,7 @@ body {
       min-height: 75px;
       margin-bottom: 30px;
       font-weight: 600;
-      font-size: 20px;
+      font-size: 16px;
       text-align: center;
       color: $black;
     }
@@ -223,9 +222,9 @@ body {
       @include text;
       font-family: $regular;
       color: $white;
-      min-width: 195px;
+      min-width: 140px;
       background: $black;
-      font-size: 16px;
+      font-size: 13px;
       text-decoration: none;
       text-transform: uppercase;
       padding: 16px 24px;
@@ -399,15 +398,13 @@ body {
     &__link {
       @include text;
       font-family: $regular;
-      color: $white;
+      color: $black;
       min-width: 195px;
-      background: $black;
       font-size: 16px;
       text-decoration: none;
       text-transform: uppercase;
       padding: 16px 24px;
       margin-bottom: 16px;
-      border: 1px solid $black;
       transition: all 0.3s ease;
       text-align: center;
       display: block;
@@ -416,6 +413,10 @@ body {
         background: $white;
       }
     }
+  }
+
+  .es-info__title--footer {
+    font-size: 20px;
   }
 
   .slick-button-prev {
@@ -466,7 +467,8 @@ body {
     padding: 0;
     margin: 0;
     bottom: 3%;
-    left: 45%;
+    left: 50%;
+    transform: translate(-50%, 0);
   }
 
   .slick-dots li {
@@ -505,6 +507,14 @@ body {
   .slick-arrow.slick-disabled {
     display: none !important;
   }
+  @media screen and (min-width: 400px) {
+    .es-cross {
+      &__container {
+        max-width: 400px;
+        margin: 0 auto;
+      }
+    }
+  }
 
   @media screen and (min-width: 560px) {
     .es-cross {
@@ -519,6 +529,24 @@ body {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         align-items: flex-end;
+      }
+
+      &__img {
+        max-width: 280px;
+        max-height: 290px;
+      }
+
+      &__single {
+        max-width: 275px;
+      }
+
+      &__link {
+        min-width: 195px;
+        font-size: 16px;
+      }
+
+      &__item-title {
+        font-size: 20px;
       }
     }
   }
@@ -545,10 +573,6 @@ body {
   }
 
   @media screen and (min-width: 768px) {
-    .slick-dots {
-      left: 47%;
-    }
-
     .es-title {
       margin-bottom: 50px;
       font-size: 30px;
@@ -664,6 +688,10 @@ body {
 
     .es-title {
       font-size: 44px;
+    }
+
+    .es-info__title--footer {
+      font-size: 40px;
     }
   }
 
